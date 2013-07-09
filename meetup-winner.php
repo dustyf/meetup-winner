@@ -19,15 +19,15 @@ Author URI: http://dustyf.com/
 // Adding a menu under Settings
 add_action( 'admin_menu', 'meet_win_admin_menu' );
 function meet_win_admin_menu() {
-	add_submenu_page( 'options-general.php', 'Meetup Contest', 'Meetup Contest', 'edit_posts', 'meetup-contest', 'meet_win_admin_page' );
+	add_submenu_page( 'options-general.php', 'Meetup Winner!', 'Meetup Winner!', 'edit_posts', 'meetup-winner', 'meet_win_admin_page' );
 }
 
 //Registering settings sections and fields
 add_action( 'admin_init', 'meet_win_admin_init' );
 function meet_win_admin_init() {
     register_setting( 'meet-win-settings', 'meetup-api-key' );
-    add_settings_section( 'api-info', 'Meetup API', 'meet_win_api_section', 'meetup-contest' );
-    add_settings_field( 'enter-api-key', 'Enter API Key', 'meet_win_enter_api', 'meetup-contest', 'api-info' );
+    add_settings_section( 'api-info', 'Meetup API', 'meet_win_api_section', 'meetup-winner' );
+    add_settings_field( 'enter-api-key', 'Enter API Key', 'meet_win_enter_api', 'meetup-winner', 'api-info' );
 }
 
 // Callback for the start of the section to enter your API info
@@ -48,7 +48,7 @@ function meet_win_admin_page() {
         <h2>Meetup Winner! Options</h2>
         <form action="options.php" method="POST">
             <?php settings_fields( 'meet-win-settings' ); ?>
-            <?php do_settings_sections( 'meetup-contest' ); ?>
+            <?php do_settings_sections( 'meetup-winner' ); ?>
             <?php submit_button(); ?>
         </form>
     </div>
@@ -79,8 +79,10 @@ function meet_win_display($eventid) {
 
 	$random = wp_rand( 0, $i );
 
-	echo '<img src="' . $rsvpPhotos[$random] . '" />';
-	echo $rsvpNames[$random] . ' is the winner ';
+	echo '<div class="meetup-winner">';
+	echo '<div class="winner-photo"><img src="' . $rsvpPhotos[$random] . '" /></div>';
+	echo '<div class="winner-text"><span class="winner-name">' . $rsvpNames[$random] . '</span> is the winner ';
+	echo '</div>';
 }
 
 /**********
