@@ -1,0 +1,8 @@
+.meetup-winner {
+	text-align: center;
+	border: 1px solid #000;
+	padding: 20px;
+}
+.winner-text {
+	font-size: 2em;
+}

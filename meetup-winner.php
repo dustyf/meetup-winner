@@ -96,3 +96,12 @@ function meet_win_shortcode($atts) {
 	meet_win_display($eventid);
 }
 add_shortcode('meetup_winner', 'meet_win_shortcode');
+
+/**********
+ * Adding some basic styles for the Winner Display
+ **********/
+
+add_action( 'wp_enqueue_scripts', 'meet_win_add_styles' );
+function meet_win_add_styles() {
+	wp_enqueue_style( 'meet-win-styles', plugins_url('css/meetup-winner.css', __FILE__) );
+}
