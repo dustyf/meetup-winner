@@ -81,7 +81,7 @@ function meet_win_display($eventid) {
 
 	echo '<div class="meetup-winner">';
 	echo '<div class="winner-photo"><img src="' . $rsvpPhotos[$random] . '" /></div>';
-	echo '<div class="winner-text"><span class="winner-name">' . $rsvpNames[$random] . '</span> is the winner ';
+	echo '<div class="winner-text"><span class="winner-name">' . $rsvpNames[$random] . '</span> is the winner!</div>';
 	echo '</div>';
 }
 
