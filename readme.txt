@@ -45,7 +45,7 @@ http://www.meetup.com/Milwaukee-WordPress-MeetUp/events/110963702/
 
 = How do I pick a winner? =
 
-Add the shortcode [meetup_winner eventid="110963702"] replacing the number with your event ID to any page on your website.  You can also use the template tag `<?php meet_win_display('110963702'); ?>` replacing the number with your event ID to use in a page template.  Visit the page to view a winner and refresh the page for a new winner.
+Add the shortcode `[meetup_winner eventid="110963702"]` replacing the number with your event ID to any page on your website.  You can also use the template tag `<?php meet_win_display('110963702'); ?>` replacing the number with your event ID to use in a page template.  Visit the page to view a winner and refresh the page for a new winner.
 
 == Screenshots ==
 
