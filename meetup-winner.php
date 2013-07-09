@@ -79,10 +79,12 @@ function meet_win_display($eventid) {
 
 	$random = wp_rand( 0, $i );
 
-	echo '<div class="meetup-winner">';
-	echo '<div class="winner-photo"><img src="' . $rsvpPhotos[$random] . '" /></div>';
-	echo '<div class="winner-text"><span class="winner-name">' . $rsvpNames[$random] . '</span> is the winner!</div>';
-	echo '</div>';
+	$return = '<div class="meetup-winner">';
+	$return .= '<div class="winner-photo"><img src="' . $rsvpPhotos[$random] . '" /></div>';
+	$return .= '<div class="winner-text"><span class="winner-name">' . $rsvpNames[$random] . '</span> is the winner!</div>';
+	$return .= '</div>';
+	
+	return $return;
 }
 
 /**********
