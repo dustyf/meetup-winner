@@ -1,14 +1,14 @@
 <?php
 /**
  * @package Meetup Winner!
- * @version 0.1
+ * @version 0.2
  */
 /*
 Plugin Name: Meetup Winner!
 Plugin URI: http://wordpress.org/extend/plugins/meetup-winner/
 Description: Hold a drawing to give away prizes and swag at your Meetup!  Once you add your Meetup API key and your event ID you can randomly pick a winner from those who have RSVPed to your meetup.
 Author: Dustin Filippini
-Version: 0.1
+Version: 0.2
 Author URI: http://dustyf.com/
 */
 

@@ -4,7 +4,7 @@ Donate link: http://dustyf.com/donate
 Tags: meetup, meetup.com, winner, contest, giveaway, drawing, prize, api
 Requires at least: 3.0.1
 Tested up to: 3.5.2
-Stable tag: trunk
+Stable tag: 0.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -23,12 +23,15 @@ To use, install the plugin, activate, and add your Meetup.com API key in the set
 
 1. Download through the WordPress plugin installer
 1. Activate the plugin through the 'Plugins' menu in WordPress
+1. Add your Meetup.com API key under Settings > Meetup Winner!
 
-Installing Manually
+= Installing Manually =
+
 1. Download the zip file
 1. Unzip meetup-winner.zip
 1. Upload `/meetup-winner/` and it's contents to the `/wp-content/plugins/` directory
 1. Activate the plugin through the 'Plugins' menu in WordPress
+1. Add your Meetup.com API key under Settings > Meetup Winner!
 
 == Frequently Asked Questions ==
 
@@ -55,6 +58,11 @@ Add the shortcode `[meetup_winner eventid="110963702"]` replacing the number wit
 
 
 == Changelog ==
+
+= 0.2 =
+* Moved the screenshots out of the actual plugin folder
+* Fixed some formatting in the Readme
+* Changed the shortcode to return the value instead of echo it
 
 = 0.1 =
 * First Version.
